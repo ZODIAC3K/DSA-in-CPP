@@ -6,6 +6,7 @@
         "xstring": "cpp",
         "xutility": "cpp",
         "random": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "condition_variable": "cpp"
     }
 }
