@@ -115,4 +115,31 @@ print(my_2d_dict) # Output: {'row1': [1, 2, 3], 'row2': [4, 5, 6], 'row3': [7, 8
 
 # creating 2D dictionary using list of tuples
 my_2d_dict = dict([('row1', {'col1': 1, 'col2': 2, 'col3': 3}), ('row2', {'col1': 4, 'col2': 5, 'col3': 6}), ('row3', {'col1': 7, 'col2': 8, 'col3': 9})])
-print(my_2d_dict) # Output: {'row1': {'col1': 1, 'col2': 2, 'col3': 3}, 'row2': {'col1': 4, 'col2': 5, 'col3': 6}, 'row3': {'col1': 7, 'col2': 8, 'col3': 9}}
+print(my_2d_dict) # Output: {'row1': {'col1': 1, 'col2': 2, 'col3': 3}, 'row2': {'col1': 4, 'col2': 5, 'col3': 6}, 'row3': {'col1': 7, 'col2': 8, 'col3': 9}}'
+
+
+# ======================================================================================================================
+
+# Program to calculate average marks of students using dictionary in Python
+
+# ======================================================================================================================
+
+student = {
+    1: {'name': 'Alice', 'age': 20, 'marks': [85, 90, 95]},
+    2: {'name': 'Bob', 'age': 21, 'marks': [80, 85, 90]}
+}
+
+print(student[1]['marks'][1])  # Output: 90
+
+sum = 0
+avg = 0
+
+for val in student:
+    for i in range(0, len(student[val]['marks'])):
+        sum += student[val]['marks'][i]
+
+avg = sum / len(student[val]['marks'])
+
+print(avg)  # Output: 88.75
+
+# ======================================================================================================================
